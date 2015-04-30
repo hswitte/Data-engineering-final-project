@@ -1,0 +1,65 @@
+<%= form_for(@precipitation_measurement) do |f| %>
+  <% if @precipitation_measurement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@precipitation_measurement.errors.count, "error") %> prohibited this precipitation_measurement from being saved:</h2>
+
+      <ul>
+      <% @precipitation_measurement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :STATION %><br>
+    <%= f.text_field :STATION %>
+  </div>
+  <div class="field">
+    <%= f.label :ELEVATION %><br>
+    <%= f.number_field :ELEVATION %>
+  </div>
+  <div class="field">
+    <%= f.label :LATITUDE %><br>
+    <%= f.text_field :LATITUDE %>
+  </div>
+  <div class="field">
+    <%= f.label :LONGITUDE %><br>
+    <%= f.text_field :LONGITUDE %>
+  </div>
+  <div class="field">
+    <%= f.label :DATE %><br>
+    <%= f.text_field :DATE %>
+  </div>
+  <div class="field">
+    <%= f.label :YTD_PRECIP_NORM %><br>
+    <%= f.text_field :YTD_PRECIP_NORM %>
+  </div>
+  <div class="field">
+    <%= f.label :YTD2013_PRECIP %><br>
+    <%= f.text_field :YTD2013_PRECIP %>
+  </div>
+  <div class="field">
+    <%= f.label :PRECIP2013_DIFF %><br>
+    <%= f.text_field :PRECIP2013_DIFF %>
+  </div>
+  <div class="field">
+    <%= f.label :YTD2014_PRECIP %><br>
+    <%= f.text_field :YTD2014_PRECIP %>
+  </div>
+  <div class="field">
+    <%= f.label :PRECIP2014_DIFF %><br>
+    <%= f.text_field :PRECIP2014_DIFF %>
+  </div>
+  <div class="field">
+    <%= f.label :YTD2015_PRECIP %><br>
+    <%= f.text_field :YTD2015_PRECIP %>
+  </div>
+  <div class="field">
+    <%= f.label :PRECIP2015_DIFF %><br>
+    <%= f.text_field :PRECIP2015_DIFF %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

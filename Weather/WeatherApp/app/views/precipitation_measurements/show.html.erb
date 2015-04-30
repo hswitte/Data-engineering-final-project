@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Station:</strong>
+  <%= @precipitation_measurement.STATION %>
+</p>
+
+<p>
+  <strong>Elevation:</strong>
+  <%= @precipitation_measurement.ELEVATION %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @precipitation_measurement.LATITUDE %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @precipitation_measurement.LONGITUDE %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @precipitation_measurement.DATE %>
+</p>
+
+<p>
+  <strong>Ytd precip norm:</strong>
+  <%= @precipitation_measurement.YTD_PRECIP_NORM %>
+</p>
+
+<p>
+  <strong>Ytd2013 precip:</strong>
+  <%= @precipitation_measurement.YTD2013_PRECIP %>
+</p>
+
+<p>
+  <strong>Precip2013 diff:</strong>
+  <%= @precipitation_measurement.PRECIP2013_DIFF %>
+</p>
+
+<p>
+  <strong>Ytd2014 precip:</strong>
+  <%= @precipitation_measurement.YTD2014_PRECIP %>
+</p>
+
+<p>
+  <strong>Precip2014 diff:</strong>
+  <%= @precipitation_measurement.PRECIP2014_DIFF %>
+</p>
+
+<p>
+  <strong>Ytd2015 precip:</strong>
+  <%= @precipitation_measurement.YTD2015_PRECIP %>
+</p>
+
+<p>
+  <strong>Precip2015 diff:</strong>
+  <%= @precipitation_measurement.PRECIP2015_DIFF %>
+</p>
+
+<%= link_to 'Edit', edit_precipitation_measurement_path(@precipitation_measurement) %> |
+<%= link_to 'Back', precipitation_measurements_path %>
