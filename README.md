@@ -17,7 +17,7 @@
  - CRUD operations through the rails interface or rails console
  - Can also be used as an API by appending .json to the end of the URL:
    - http://localhost:3000/precipitation_measurements.json
-   - 
+ 
    
 ###A note about the data:
 - All data was collected from NOAA (https://www.ncdc.noaa.gov/cdo-web/datasets)
