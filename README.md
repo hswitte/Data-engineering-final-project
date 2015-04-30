@@ -9,6 +9,7 @@
 ### Configuration for local machine:
  - Clone the repo onto your machine
  - Start an instance of Mongo (for my Arch setup this is done by ```systemctl start mongodb```)
+ - cd into Weather/WeatherApp
  - Import the CSV file into mongo using the following command
    - ```mongoimport -c precipitation_measurements -d weather_development --type=csv --headerline ../final_climate_data.csv```
  - Start the rails server
