@@ -13,6 +13,7 @@
  - cd into Weather/WeatherApp
  - Import the CSV file into mongo using the following command
    - ```mongoimport -c precipitation_measurements -d weather_development --type=csv --headerline ../final_climate_data.csv```
+ - Do a ```bundle install```
  - Start the rails server
  - Navigate to http://localhost:3000/precipitation_measurements to see the data stored in mongo at this time
  - CRUD operations through the rails interface or rails console
